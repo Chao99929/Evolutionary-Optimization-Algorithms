@@ -45,6 +45,7 @@ Build/
 build-*/
 
 # CMake generated files
+CMakeLists.txt
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
@@ -67,3 +68,42 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Local macOS files and generated experiment artifacts
+.DS_Store
+*.dSYM/
+/DE/DE
+/PSO/main
+/PSO/pso
+/SHADE/main
+/LSHADE/main
+/JADE/main
+**/output.txt
+**/*30.txt
+/DE/temp.plt
+
+# Historical experiments and third-party reference package (not release sources)
+/LSHADE/C Code.zip
+/LSHADE/testshade.h
+/LSHADE/test.cpp
+/LSHADE/testSelectTopPBest.cpp
+
+# Preserved local originals and experiment artifacts
+/local_archive/
+
+.vscode/
+__pycache__/
+
+# Keep hand-written algorithm build recipes
+!/DE/makefile
+!/JADE/makefile
+!/SHADE/makefile
+!/LSHADE/makefile
+!/PSO/makefile
+
+# Per-algorithm make outputs
+/DE/de
+/JADE/jade
+/SHADE/shade
+/LSHADE/lshade
+/PSO/pso
